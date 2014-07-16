@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" typeof="bibo:Document w3p:WD" about="" property="dcterms:language" content="en">
+<html lang="en-US" typeof="bibo:Document w3p:WD" about="" property="dcterms:language" content="en" version="XHTML+RDFa 1.0">
 <head>
 		<title>Media Accessibility User Requirements</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -186,16 +186,16 @@ span.note, span.issue { padding: .1em .5em .15em; }
 }
 
 
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/W3C-WD"><!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]--></head>
-	<body class="h-entry" role="document" id="respecDocument"><div class="head" role="contentinfo" id="respecHeader">
+</style><link href="https://www.w3.org/StyleSheets/TR/W3C-WD" rel="stylesheet"><!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]--></head>
+	<body id="respecDocument" role="document" class="h-entry"><div id="respecHeader" role="contentinfo" class="head">
   <p>
     
-      <a href="http://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/Icons/w3c_home" alt="W3C"></a>
+      <a href="http://www.w3.org/"><img src="https://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width="72"></a>
     
   </p>
   <h1 class="title p-name" id="title" property="dcterms:title">Media Accessibility User Requirements</h1>
   
-  <h2 property="dcterms:issued" datatype="xsd:dateTime" content="2014-07-17T04:00:00.000Z" id="w3c-working-draft-17-july-2014"><abbr title="World Wide Web Consortium">W3C</abbr> Working Draft <time class="dt-published" datetime="2014-07-17">17 July 2014</time></h2>
+  <h2 id="w3c-working-draft-17-july-2014" property="dcterms:issued" datatype="xsd:dateTime" content="2014-07-17T04:00:00.000Z"><abbr title="World Wide Web Consortium">W3C</abbr> Working Draft <time class="dt-published" datetime="2014-07-17">17 July 2014</time></h2>
   <dl>
     
       <dt>This version:</dt>
@@ -271,7 +271,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
   
   <hr>
 </div>
-		<section id="abstract" class="introductory" property="dcterms:abstract" datatype="" typeof="bibo:Chapter" resource="#abstract" rel="bibo:Chapter"><!--OddPage--><h2 aria-level="1" role="heading" id="h2_abstract">Abstract</h2>
+		<section rel="bibo:Chapter" resource="#abstract" typeof="bibo:Chapter" datatype="" property="dcterms:abstract" class="introductory" id="abstract"><!--OddPage--><h2 id="h2_abstract" role="heading" aria-level="1">Abstract</h2>
 			<p>This document presents the accessibility requirements users with disabilities have
             with respect to audio and video on the web. </p>
     <p>It first provides an introduction to the needs of users with disabilities
@@ -292,7 +292,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
     here because it's important for accommodating the alternative access
     needs of users with disabilities to web-based media. This document is an
     inventory of Media Accessibility User Requirements. </p>
-		</section><section id="sotd" class="introductory" typeof="bibo:Chapter" resource="#sotd" rel="bibo:Chapter"><!--OddPage--><h2 aria-level="1" role="heading" id="h2_sotd">Status of This Document</h2>
+		</section><section rel="bibo:Chapter" resource="#sotd" typeof="bibo:Chapter" id="sotd" class="introductory"><!--OddPage--><h2 id="h2_sotd" role="heading" aria-level="1">Status of This Document</h2>
   
     
       
@@ -313,8 +313,6 @@ span.note, span.issue { padding: .1em .5em .15em; }
 		
         <p>
           This document was published by the <a href="http://www.w3.org/WAI/PF/">Protocols and Formats Working Group</a> as a Working Draft.
-          
-            This document is intended to become a <abbr title="World Wide Web Consortium">W3C</abbr> Recommendation.
           
           
             If you wish to make comments regarding this document, please send them to 
@@ -346,6 +344,8 @@ span.note, span.issue { padding: .1em .5em .15em; }
             Policy</a>.
           
           
+            The group does not expect this document to become a <abbr title="World Wide Web Consortium">W3C</abbr> Recommendation.
+          
           
             
               <abbr title="World Wide Web Consortium">W3C</abbr> maintains a <a href="http://www.w3.org/2004/01/pp-impl/32212/status" rel="disclosure">public list of any patent
@@ -365,17 +365,17 @@ span.note, span.issue { padding: .1em .5em .15em; }
       
     
   
-</section><section id="toc"><h2 class="introductory" aria-level="1" role="heading" id="h2_toc">Table of Contents</h2><ul class="toc" role="directory" id="respecContents"><li class="tocline"><a href="#abstract" class="tocxref">Abstract</a></li><li class="tocline"><a href="#sotd" class="tocxref">Status of This Document</a></li><li class="tocline"><a href="#media-accessibility-checklist" class="tocxref"><span class="secno">1. </span> Media Accessibility Checklist </a></li><li class="tocline"><a href="#accessible-media-requirements-by-type-of-disability" class="tocxref"><span class="secno">2. </span> Accessible Media Requirements by Type of Disability </a><ul class="toc"><li class="tocline"><a href="#blindness" class="tocxref"><span class="secno">2.1 </span> Blindness </a></li><li class="tocline"><a href="#low-vision" class="tocxref"><span class="secno">2.2 </span> Low vision </a></li><li class="tocline"><a href="#atypical-color-perception" class="tocxref"><span class="secno">2.3 </span> Atypical color perception </a></li><li class="tocline"><a href="#deafness" class="tocxref"><span class="secno">2.4 </span> Deafness </a></li><li class="tocline"><a href="#hard-of-hearing" class="tocxref"><span class="secno">2.5 </span> Hard of hearing </a></li><li class="tocline"><a href="#deaf-blind" class="tocxref"><span class="secno">2.6 </span> Deaf-blind </a></li><li class="tocline"><a href="#physical-impairment" class="tocxref"><span class="secno">2.7 </span> Physical impairment </a></li><li class="tocline"><a href="#cognitive-and-neurological-disabilities" class="tocxref"><span class="secno">2.8 </span> Cognitive and neurological disabilities </a></li></ul></li><li class="tocline"><a href="#alternative-content-technologies" class="tocxref"><span class="secno">3. </span> Alternative Content Technologies </a><ul class="toc"><li class="tocline"><a href="#described-video" class="tocxref"><span class="secno">3.1 </span> Described video </a></li><li class="tocline"><a href="#text-video-description" class="tocxref"><span class="secno">3.2 </span> Text video description </a></li><li class="tocline"><a href="#extended-video-descriptions" class="tocxref"><span class="secno">3.3 </span> Extended video descriptions </a></li><li class="tocline"><a href="#clean-audio" class="tocxref"><span class="secno">3.4 </span> Clean audio </a></li><li class="tocline"><a href="#content-navigation-by-content-structure" class="tocxref"><span class="secno">3.5 </span> Content navigation by content structure </a></li><li class="tocline"><a href="#captioning" class="tocxref"><span class="secno">3.6 </span> Captioning </a></li><li class="tocline"><a href="#enhanced-captions-subtitles" class="tocxref"><span class="secno">3.7 </span> Enhanced captions/subtitles </a></li><li class="tocline"><a href="#sign-translation" class="tocxref"><span class="secno">3.8 </span> Sign translation </a></li><li class="tocline"><a href="#transcripts" class="tocxref"><span class="secno">3.9 </span> Transcripts </a></li></ul></li><li class="tocline"><a href="#system-requirements" class="tocxref"><span class="secno">4. </span> System Requirements </a><ul class="toc"><li class="tocline"><a href="#access-to-interactive-controls-menus" class="tocxref"><span class="secno">4.1 </span> Access to interactive controls / menus </a></li><li class="tocline"><a href="#granularity-level-control-for-structural-navigation" class="tocxref"><span class="secno">4.2 </span> Granularity level control for structural navigation </a></li><li class="tocline"><a href="#time-scale-modification" class="tocxref"><span class="secno">4.3 </span> Time-scale modification </a></li><li class="tocline"><a href="#production-practice-and-resulting-requirements" class="tocxref"><span class="secno">4.4 </span> Production practice and resulting requirements </a></li><li class="tocline"><a href="#discovery-and-activation-deactivation-of-available-alternative-content-by-the-user" class="tocxref"><span class="secno">4.5 </span> Discovery and activation/deactivation of available alternative content
-      by the user </a></li><li class="tocline"><a href="#requirements-on-making-properties-available-to-the-accessibility-interface" class="tocxref"><span class="secno">4.6 </span> Requirements on making properties available to the accessibility interface </a></li><li class="tocline"><a href="#requirements-on-the-use-of-the-viewport" class="tocxref"><span class="secno">4.7 </span> Requirements on the use of the viewport </a></li><li class="tocline"><a href="#requirements-on-secondary-screens-and-other-devices" class="tocxref"><span class="secno">4.8 </span>Requirements on secondary screens and other devices</a></li></ul></li><li class="tocline"><a href="#acknowledgments" class="tocxref"><span class="secno">A. </span>Acknowledgments</a><ul class="toc"><li class="tocline"><a href="#ack_group" class="tocxref"><span class="secno">A.1 </span>Participants in the PFWG at the time of publication</a></li><li class="tocline"><a href="#ack_others" class="tocxref"><span class="secno">A.2 </span>Other previously active PFWG participants and contributors</a></li><li class="tocline"><a href="#ack_funders" class="tocxref"><span class="secno">A.3 </span>Enabling funders</a></li></ul></li></ul></section>
+</section><section id="toc"><h2 id="h2_toc" role="heading" aria-level="1" class="introductory">Table of Contents</h2><ul id="respecContents" role="directory" class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#media-accessibility-checklist"><span class="secno">1. </span> Media Accessibility Checklist </a></li><li class="tocline"><a class="tocxref" href="#accessible-media-requirements-by-type-of-disability"><span class="secno">2. </span> Accessible Media Requirements by Type of Disability </a><ul class="toc"><li class="tocline"><a class="tocxref" href="#blindness"><span class="secno">2.1 </span> Blindness </a></li><li class="tocline"><a class="tocxref" href="#low-vision"><span class="secno">2.2 </span> Low vision </a></li><li class="tocline"><a class="tocxref" href="#atypical-color-perception"><span class="secno">2.3 </span> Atypical color perception </a></li><li class="tocline"><a class="tocxref" href="#deafness"><span class="secno">2.4 </span> Deafness </a></li><li class="tocline"><a class="tocxref" href="#hard-of-hearing"><span class="secno">2.5 </span> Hard of hearing </a></li><li class="tocline"><a class="tocxref" href="#deaf-blind"><span class="secno">2.6 </span> Deaf-blind </a></li><li class="tocline"><a class="tocxref" href="#physical-impairment"><span class="secno">2.7 </span> Physical impairment </a></li><li class="tocline"><a class="tocxref" href="#cognitive-and-neurological-disabilities"><span class="secno">2.8 </span> Cognitive and neurological disabilities </a></li></ul></li><li class="tocline"><a class="tocxref" href="#alternative-content-technologies"><span class="secno">3. </span> Alternative Content Technologies </a><ul class="toc"><li class="tocline"><a class="tocxref" href="#described-video"><span class="secno">3.1 </span> Described video </a></li><li class="tocline"><a class="tocxref" href="#text-video-description"><span class="secno">3.2 </span> Text video description </a></li><li class="tocline"><a class="tocxref" href="#extended-video-descriptions"><span class="secno">3.3 </span> Extended video descriptions </a></li><li class="tocline"><a class="tocxref" href="#clean-audio"><span class="secno">3.4 </span> Clean audio </a></li><li class="tocline"><a class="tocxref" href="#content-navigation-by-content-structure"><span class="secno">3.5 </span> Content navigation by content structure </a></li><li class="tocline"><a class="tocxref" href="#captioning"><span class="secno">3.6 </span> Captioning </a></li><li class="tocline"><a class="tocxref" href="#enhanced-captions-subtitles"><span class="secno">3.7 </span> Enhanced captions/subtitles </a></li><li class="tocline"><a class="tocxref" href="#sign-translation"><span class="secno">3.8 </span> Sign translation </a></li><li class="tocline"><a class="tocxref" href="#transcripts"><span class="secno">3.9 </span> Transcripts </a></li></ul></li><li class="tocline"><a class="tocxref" href="#system-requirements"><span class="secno">4. </span> System Requirements </a><ul class="toc"><li class="tocline"><a class="tocxref" href="#access-to-interactive-controls-menus"><span class="secno">4.1 </span> Access to interactive controls / menus </a></li><li class="tocline"><a class="tocxref" href="#granularity-level-control-for-structural-navigation"><span class="secno">4.2 </span> Granularity level control for structural navigation </a></li><li class="tocline"><a class="tocxref" href="#time-scale-modification"><span class="secno">4.3 </span> Time-scale modification </a></li><li class="tocline"><a class="tocxref" href="#production-practice-and-resulting-requirements"><span class="secno">4.4 </span> Production practice and resulting requirements </a></li><li class="tocline"><a class="tocxref" href="#discovery-and-activation-deactivation-of-available-alternative-content-by-the-user"><span class="secno">4.5 </span> Discovery and activation/deactivation of available alternative content
+      by the user </a></li><li class="tocline"><a class="tocxref" href="#requirements-on-making-properties-available-to-the-accessibility-interface"><span class="secno">4.6 </span> Requirements on making properties available to the accessibility interface </a></li><li class="tocline"><a class="tocxref" href="#requirements-on-the-use-of-the-viewport"><span class="secno">4.7 </span> Requirements on the use of the viewport </a></li><li class="tocline"><a class="tocxref" href="#requirements-on-secondary-screens-and-other-devices"><span class="secno">4.8 </span>Requirements on secondary screens and other devices</a></li></ul></li><li class="tocline"><a class="tocxref" href="#acknowledgments"><span class="secno">A. </span>Acknowledgments</a><ul class="toc"><li class="tocline"><a class="tocxref" href="#ack_group"><span class="secno">A.1 </span>Participants in the PFWG and HTML Accessibility Task Force at the time of publication</a></li><li class="tocline"><a class="tocxref" href="#ack_others"><span class="secno">A.2 </span>Other previously active PFWG participants and contributors</a></li><li class="tocline"><a class="tocxref" href="#ack_funders"><span class="secno">A.3 </span>Enabling funders</a></li></ul></li></ul></section>
 		
 		<section id="media-accessibility-checklist">
-			<!--OddPage--><h2 aria-level="1" role="heading" id="h2_media-accessibility-checklist"><span class="secno">1. </span> Media Accessibility Checklist </h2>
+			<!--OddPage--><h2 id="h2_media-accessibility-checklist" role="heading" aria-level="1"><span class="secno">1. </span> Media Accessibility Checklist </h2>
 			<p>The following User Requirements have also been distilled into a <a href="http://www.w3.org/WAI/PF/HTML/wiki/Media_Accessibility_Checklist">Media Accessibility Checklist</a>.
 			Developers and implementers may want to refer to this checklist when
 			implementing audio and video content and features.</p>
 		</section>
 		<section id="accessible-media-requirements-by-type-of-disability">
-			<!--OddPage--><h2 aria-level="1" role="heading" id="h2_accessible-media-requirements-by-type-of-disability"><span class="secno">2. </span> Accessible Media Requirements by Type of Disability </h2>
+			<!--OddPage--><h2 id="h2_accessible-media-requirements-by-type-of-disability" role="heading" aria-level="1"><span class="secno">2. </span> Accessible Media Requirements by Type of Disability </h2>
 
             <p>Editorial note: This section is a rough draft. It will be edited to align with
 
@@ -394,7 +394,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
     by the media formats themselves, but is a requirement of the technology used
     to build the player. </p>
 			<section id="blindness">
-				<h3 aria-level="2" role="heading" id="h3_blindness"><span class="secno">2.1 </span> Blindness </h3>
+				<h3 id="h3_blindness" role="heading" aria-level="2"><span class="secno">2.1 </span> Blindness </h3>
 				<p>People who are blind cannot access information if it is presented only
       in the visual mode. They require information in an alternative representation,
       which typically means the audio mode, although information can also be
@@ -407,7 +407,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
       provided for the media content. </p>
 			</section>
 			<section id="low-vision">
-				<h3 aria-level="2" role="heading" id="h3_low-vision"><span class="secno">2.2 </span> Low vision </h3>
+				<h3 id="h3_low-vision" role="heading" aria-level="2"><span class="secno">2.2 </span> Low vision </h3>
 				<p>People with low vision can use some visual information.
       Depending on their visual
       ability they might have specific issues such as difficulty discriminating
@@ -429,7 +429,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
       users of screen readers or refreshable Braille. </p>
 			</section>
 			<section id="atypical-color-perception">
-				<h3 aria-level="2" role="heading" id="h3_atypical-color-perception"><span class="secno">2.3 </span> Atypical color perception </h3>
+				<h3 id="h3_atypical-color-perception" role="heading" aria-level="2"><span class="secno">2.3 </span> Atypical color perception </h3>
 				<p>A significant percentage of the population has atypical color perception,
       and may not be able to discriminate between different colors, or may miss
       key information when coded with color only.  They might have difficulty discriminating
@@ -437,12 +437,12 @@ span.note, span.issue { padding: .1em .5em .15em; }
       can be minimized when the user has the ability to customize the color and contrast of text content. </p>
 			</section>
 			<section id="deafness">
-				<h3 aria-level="2" role="heading" id="h3_deafness"><span class="secno">2.4 </span> Deafness </h3>
+				<h3 id="h3_deafness" role="heading" aria-level="2"><span class="secno">2.4 </span> Deafness </h3>
 				<p>People who are deaf generally cannot use audio. Thus, an alternative representation
       is required, typically through synchronized captions and/or sign translation. </p>
 			</section>
 			<section id="hard-of-hearing">
-				<h3 aria-level="2" role="heading" id="h3_hard-of-hearing"><span class="secno">2.5 </span> Hard of hearing </h3>
+				<h3 id="h3_hard-of-hearing" role="heading" aria-level="2"><span class="secno">2.5 </span> Hard of hearing </h3>
 				<p>People who are hard of hearing may be able to use some audio material,
       but might not be able to discriminate certain types of sound, and may miss
       any information presented as audio only if it contains frequencies they
@@ -453,7 +453,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
       who are deaf in one ear. </p>
 			</section>
 			<section id="deaf-blind">
-				<h3 aria-level="2" role="heading" id="h3_deaf-blind"><span class="secno">2.6 </span> Deaf-blind </h3>
+				<h3 id="h3_deaf-blind" role="heading" aria-level="2"><span class="secno">2.6 </span> Deaf-blind </h3>
 				<p>Individuals who are deaf-blind have a combination of conditions that may
       result in one of the following: blindness and deafness; blindness and difficulty
       in hearing; low vision and deafness; or low vision and difficulty in hearing.
@@ -465,7 +465,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
       transcript which they can read at their own pace. </p>
 			</section>
 			<section id="physical-impairment">
-				<h3 aria-level="2" role="heading" id="h3_physical-impairment"><span class="secno">2.7 </span> Physical impairment </h3>
+				<h3 id="h3_physical-impairment" role="heading" aria-level="2"><span class="secno">2.7 </span> Physical impairment </h3>
 				<p>People with physical disabilities such as poor dexterity, loss of limbs, or
       loss of use of limbs may use the keyboard alone rather than the combination
       of a pointing device plus keyboard to interact with content and controls,
@@ -475,7 +475,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
       methods for selecting alternative content. </p>
 			</section>
 			<section id="cognitive-and-neurological-disabilities">
-				<h3 aria-level="2" role="heading" id="h3_cognitive-and-neurological-disabilities"><span class="secno">2.8 </span> Cognitive and neurological disabilities </h3>
+				<h3 id="h3_cognitive-and-neurological-disabilities" role="heading" aria-level="2"><span class="secno">2.8 </span> Cognitive and neurological disabilities </h3>
 				<p>Cognitive and neurological disabilities include a wide range of conditions
       that may include intellectual disabilities (called learning disabilities
       in some regions), autism-spectrum disorders, memory impairments, mental-health
@@ -523,14 +523,14 @@ span.note, span.issue { padding: .1em .5em .15em; }
 			</section>
 		</section>
 		<section id="alternative-content-technologies">
-			<!--OddPage--><h2 aria-level="1" role="heading" id="h2_alternative-content-technologies"><span class="secno">3. </span> Alternative Content Technologies </h2>
+			<!--OddPage--><h2 id="h2_alternative-content-technologies" role="heading" aria-level="1"><span class="secno">3. </span> Alternative Content Technologies </h2>
 			<p>A number of alternative content types have been developed to help users
     with sensory disabilities gain access to audio-visual content. This section
     lists them, explains generally what they are, and provides a number of requirements
     on each that need to be satisfied with technology developed in HTML5 around
     the media elements. </p>
 			<section id="described-video">
-				<h3 aria-level="2" role="heading" id="h3_described-video"><span class="secno">3.1 </span> Described video </h3>
+				<h3 id="h3_described-video" role="heading" aria-level="2"><span class="secno">3.1 </span> Described video </h3>
 				<p>Described video contains descriptive narration of key visual elements
       designed to make visual media accessible to people who are blind or visually
       impaired. The descriptions include actions, costumes, gestures, scene changeset
@@ -638,7 +638,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 			<section id="text-video-description">
-				<h3 aria-level="2" role="heading" id="h3_text-video-description"><span class="secno">3.2 </span> Text video description </h3>
+				<h3 id="h3_text-video-description" role="heading" aria-level="2"><span class="secno">3.2 </span> Text video description </h3>
 				<p>Described video that uses text for the description source rather than
       a recorded voice creates specific requirements. </p>
 				<p>Text video descriptions (TVDs) are delivered to the client as text and
@@ -700,7 +700,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 			<section id="extended-video-descriptions">
-				<h3 aria-level="2" role="heading" id="h3_extended-video-descriptions"><span class="secno">3.3 </span> Extended video descriptions </h3>
+				<h3 id="h3_extended-video-descriptions" role="heading" aria-level="2"><span class="secno">3.3 </span> Extended video descriptions </h3>
 				<p>Video descriptions are usually provided as recorded speech, timed to play
       in the natural pauses in dialog or narration. In some types of material,
       however, there is not enough time to present sufficient descriptions. To
@@ -737,7 +737,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 			<section id="clean-audio">
-				<h3 aria-level="2" role="heading" id="h3_clean-audio"><span class="secno">3.4 </span> Clean audio </h3>
+				<h3 id="h3_clean-audio" role="heading" aria-level="2"><span class="secno">3.4 </span> Clean audio </h3>
 				<p>A relatively recent development in television accessibility is the concept
       of <a href="http://www.etsi.org/deliver/etsi_ts/101100_101199/101154/01.09.01_60/ts_101154v010901p.pdf">clean
       audio</a>, which takes advantage of the increased adoption of multichannel
@@ -769,7 +769,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 			<section id="content-navigation-by-content-structure">
-				<h3 aria-level="2" role="heading" id="h3_content-navigation-by-content-structure"><span class="secno">3.5 </span> Content navigation by content structure </h3>
+				<h3 id="h3_content-navigation-by-content-structure" role="heading" aria-level="2"><span class="secno">3.5 </span> Content navigation by content structure </h3>
 				<p>Most people are familiar with fast forward and rewind in media content.
       However, because they progress through content based only on time, fast
       forward and rewind are ineffective particularly when the content is being
@@ -920,7 +920,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 			<section id="captioning">
-				<h3 aria-level="2" role="heading" id="h3_captioning"><span class="secno">3.6 </span> Captioning </h3>
+				<h3 id="h3_captioning" role="heading" aria-level="2"><span class="secno">3.6 </span> Captioning </h3>
 				<p>For people who are deaf or hard-of-hearing, captioning is a prime alternative
       representation of audio. Captions are in the same language as the main
       audio track and, in contrast to foreign-language subtitles, render a transcription
@@ -958,7 +958,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				<div class="indent">
 					<div class="requirement" id="CC-1"><strong class="req-handle">[CC-1]</strong> Render text in a time-synchronized manner,
           using the media resource as the timebase master. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_1"><span>Note</span></div><p class="">Most of the time, the main audio track would be the best candidate
+					<div class="note"><div id="h_note_1" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">Most of the time, the main audio track would be the best candidate
         for the timebase. Where a video without audio, but with a text track,
         is available, the video track becomes the timebase master. Also, there
         may be situations where an explicit timing track is available. </p></div>
@@ -966,21 +966,21 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				<div class="indent">
 					<div class="requirement" id="CC-2"><strong class="req-handle">[CC-2]</strong> Allow the author to specify erasures, i.e.,
           times when no text is displayed on the screen (no text cues are active). </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_2"><span>Note</span></div><p class="">This should be possible both within media resources and caption
+					<div class="note"><div id="h_note_2" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This should be possible both within media resources and caption
       formats. </p></div>
 				</div>
 				<div class="indent">
 					<div class="requirement" id="CC-3"><strong class="req-handle">[CC-3]</strong> Allow the author to assign timestamps so
           that one caption/subtitle follows another, with no perceivable gap
           in between. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_3"><span>Note</span></div><p class="">This means that caption cues should be able to either let the
+					<div class="note"><div id="h_note_3" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This means that caption cues should be able to either let the
         start time of the subsequent cue be determined by the duration of the
         cue or have the end time be implied by the start of the next cue. For
         overlapping captions, explicit start and end times are then required. </p></div>
 				</div>
 				<div class="indent">
 					<div class="requirement" id="CC-4"><strong class="req-handle">[CC-4]</strong> Be available in a text encoding. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_4"><span>Note</span></div><p class="">This means that determined character encodings should be supported
+					<div class="note"><div id="h_note_4" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This means that determined character encodings should be supported
         - which could be either by making the character encoding explicit or
         by enforcing a single default one such as UTF-8. </p></div>
 				</div>
@@ -990,7 +990,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
           space next to the media viewport. This is particularly important when
           multiple captions are on screen at the same time and relate to different
           speakers, or when in-picture text is avoided. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_5"><span>Note</span></div><p class="">The minimum requirement is a bounding box (with an optional background)
+					<div class="note"><div id="h_note_5" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">The minimum requirement is a bounding box (with an optional background)
         into which text is flowed, and that probably needs to be pixel aligned.
         The absolute position of text within the bounding box is less critical,
         although it is important to be able to avoid bad word-breaks and have
@@ -1006,14 +1006,14 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				<div class="indent">
 					<div class="requirement" id="CC-6"><strong class="req-handle">[CC-6]</strong> Support the display of multiple regions
           of text simultaneously. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_6"><span>Note</span></div><p class="">This typically relates to multiple text cues that are defined
+					<div class="note"><div id="h_note_6" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This typically relates to multiple text cues that are defined
         on overlapping times. If the cues' rendering target are made out to different
         spatial regions, they can be displayed simultaneously. </p></div>
 				</div>
 				<div class="indent">
 					<div class="requirement" id="CC-7"><strong class="req-handle">[CC-7]</strong> Display multiple rows of text when rendered
           as text in a right-to-left or left-to-right language. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_7"><span>Note</span></div><p class="">Internationalization is important not just for subtitles, as captions
+					<div class="note"><div id="h_note_7" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">Internationalization is important not just for subtitles, as captions
       can be used in all languages. </p></div>
 				</div>
 				<div class="indent">
@@ -1028,7 +1028,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 				<div class="indent">
 					<div class="requirement" id="CC-11"><strong class="req-handle">[CC-11]</strong> Render text in a range of colors. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_8"><span>Note</span></div><p class="">The user should have final control over rendering styles like
+					<div class="note"><div id="h_note_8" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">The user should have final control over rendering styles like
       color and fonts; e.g., through user preferences. </p></div>
 				</div>
 				<div class="indent">
@@ -1041,7 +1041,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
           is displayed, such that it minimizes distraction. However, where captions
           are infrequent the background should be allowed to disappear to enable
           the user to see as much of the underlying video as possible. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_9"><span>Note</span></div><p class="">It may be technically possible to have cues without text. </p></div>
+					<div class="note"><div id="h_note_9" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">It may be technically possible to have cues without text. </p></div>
 				</div>
 				<div class="indent">
 					<div class="requirement" id="CC-14"><strong class="req-handle">[CC-14]</strong> Allow the use of mixed display styles—
@@ -1057,7 +1057,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
           up" to about three lines. The top line of the three disappears
           as a new bottom line is added, allowing the continuous rolling up of
           new lines of captions. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_10"><span>Note</span></div><p class="">Similarly, in karaoke, individual characters are often "painted
+					<div class="note"><div id="h_note_10" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">Similarly, in karaoke, individual characters are often "painted
       on". </p></div>
 				</div>
 				<div class="indent">
@@ -1079,7 +1079,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
           resource. Also allow for separate caption files for different languages
           and on-the-fly switching between them. This is also a requirement for
           subtitles. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_11"><span>Note</span></div><p class="">Caption/subtitle files that are alternatives in different languages
+					<div class="note"><div id="h_note_11" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">Caption/subtitle files that are alternatives in different languages
         are probably best provided in different caption resources and are user
         selectable. Realistically, having no more than 2 languages present at
         the same time on screen is probably the limit. </p></div>
@@ -1098,7 +1098,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				<div class="indent">
 					<div class="requirement" id="CC-20"><strong class="req-handle">[CC-20]</strong> Permit in-line mark-up for foreign words
           or phrases. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_12"><span>Note</span></div><p class="">Italics markup may be sufficient for a human user, but it is important
+					<div class="note"><div id="h_note_12" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">Italics markup may be sufficient for a human user, but it is important
         to be able to mark up languages so that the text can be rendered correctly,
         since the same Unicode can be shared between languages and rendered differently
         in different contexts. This is mainly an localization issue. It is also important
@@ -1112,7 +1112,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				<div class="indent">
 					<div class="requirement" id="CC-22"><strong class="req-handle">[CC-22]</strong> Support captions that are provided inside
           media resources as tracks, or in external files. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_13"><span>Note</span></div><p class="">It is desirable to expose the same API to both. </p></div>
+					<div class="note"><div id="h_note_13" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">It is desirable to expose the same API to both. </p></div>
 				</div>
 				<div class="indent">
 					<div class="requirement" id="CC-23"><strong class="req-handle">[CC-23]</strong> Ascertain that captions are displayed in
@@ -1121,20 +1121,20 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				<div class="indent">
 					<div class="requirement" id="CC-24"><strong class="req-handle">[CC-24]</strong> Support user activation/deactivation of
           caption tracks. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_14"><span>Note</span></div><p class="">This requires a menu of some sort that displays the available
+					<div class="note"><div id="h_note_14" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This requires a menu of some sort that displays the available
       tracks for activation/deactivation. </p></div>
 				</div>
 				<div class="indent">
 					<div class="requirement" id="CC-25"><strong class="req-handle">[CC-25]</strong> Support edited and verbatim captions, if
           available. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_15"><span>Note</span></div><p class="">Edited and verbatim captions can be provided in two different
+					<div class="note"><div id="h_note_15" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">Edited and verbatim captions can be provided in two different
         caption resources. There is a need to expose to the user how they differ,
         similar to how there can be caption tracks in different languages. </p></div>
 				</div>
 				<div class="indent">
 					<div class="requirement" id="CC-26"><strong class="req-handle">[CC-26]</strong> Support multiple tracks of foreign-language
           subtitles in different languages. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_16"><span>Note</span></div><p class="">These different-language "tracks" can be provided in
+					<div class="note"><div id="h_note_16" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">These different-language "tracks" can be provided in
       different resources. </p></div>
 				</div>
 				<div class="indent">
@@ -1142,7 +1142,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 			<section id="enhanced-captions-subtitles">
-				<h3 aria-level="2" role="heading" id="h3_enhanced-captions-subtitles"><span class="secno">3.7 </span> Enhanced captions/subtitles </h3>
+				<h3 id="h3_enhanced-captions-subtitles" role="heading" aria-level="2"><span class="secno">3.7 </span> Enhanced captions/subtitles </h3>
 				<p>Enhanced captions are timed text cues that have been enriched with further
       information - examples are glossary definitions for acronyms and other
       intialisms, foreign terms (for example, Latin), jargon or descriptions
@@ -1165,7 +1165,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				<div class="indent">
 					<div class="requirement" id="ECC-1"><strong class="req-handle">[ECC-1]</strong> Support metadata markup for (sections of)
           timed text cues. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_17"><span>Note</span></div><p class="">Such "metadata" markup can be realized through a @title
+					<div class="note"><div id="h_note_17" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">Such "metadata" markup can be realized through a @title
         attribute on a &lt;span&gt; of the text, or a hyperlink to another location
         where a term is explained, an &lt;abbr&gt; element, an   &lt;acronym&gt; element,
         a &lt;dfn&gt; element, or through RDFa or microdata. </p></div>
@@ -1173,7 +1173,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				<div class="indent">
 					<div class="requirement" id="ECC-2"><strong class="req-handle">[ECC-2]</strong> Support hyperlinks and other activation
           mechanisms for supplementary data for (sections of) caption text. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_18"><span>Note</span></div><p class="">This can be realized through inclusion of links or
+					<div class="note"><div id="h_note_18" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This can be realized through inclusion of links or
         buttons into timed text cues, where additional overlays could be created
         or a different page be loaded. One needs to deal here with the need to
         pause the media timeline for reading of the additional information. </p></div>
@@ -1185,7 +1185,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
           overlap is ok or should be cut or the media resource be paused while
           the caption is displayed. Timing would be provided by the author, but
           with the user being able to override it. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_19"><span>Note</span></div><p class="">This feature is analogous to extended video descriptions - where
+					<div class="note"><div id="h_note_19" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This feature is analogous to extended video descriptions - where
         timing for a text cue is longer than the available time for the cue,
         it may be necessary to halt the media to allow for more time to read
         back on the text and its additional material. In this case, the pause
@@ -1204,12 +1204,12 @@ span.note, span.issue { padding: .1em .5em .15em; }
 					<div class="requirement" id="ECC-5"><strong class="req-handle">[ECC-5]</strong> Allow users to define the reading speed
           and thus define how long each text cue requires, and whether media
           playback needs to pause sometimes to let them catch up on their reading. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_20"><span>Note</span></div><p class="">This can be a setting in the UA, which will define user-interface
+					<div class="note"><div id="h_note_20" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This can be a setting in the UA, which will define user-interface
       behavior. </p></div>
 				</div>
 			</section>
 			<section id="sign-translation">
-				<h3 aria-level="2" role="heading" id="h3_sign-translation"><span class="secno">3.8 </span> Sign translation </h3>
+				<h3 id="h3_sign-translation" role="heading" aria-level="2"><span class="secno">3.8 </span> Sign translation </h3>
 				<p>Sign language shares the same concept as captioning: it presents both
       speech and non-speech information in an alternative format. Note that due
       to the wide regional variation in signing systems (e.g., American Sign
@@ -1225,7 +1225,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
       although research continues in this area and it may become practical at
       some point in the future. </p>
 				<p>Acknowledging that not all devices will be capable of handling multiple
-      video streams, this is a <em class="rfc2119" title="SHOULD">SHOULD</em> requirement for browsers where hardware
+      video streams, this is a <em title="SHOULD" class="rfc2119">SHOULD</em> requirement for browsers where hardware
       is capable of support. Strong authoring guidance for content creators will
       mitigate situations where user-agents are unable to support multiple video
       streams (WCAG) - for example, on mobile devices that cannot support multiple
@@ -1260,7 +1260,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 			<section id="transcripts">
-				<h3 aria-level="2" role="heading" id="h3_transcripts"><span class="secno">3.9 </span> Transcripts </h3>
+				<h3 id="h3_transcripts" role="heading" aria-level="2"><span class="secno">3.9 </span> Transcripts </h3>
 				<p>While synchronized captions are generally preferable for people with hearing
       impairments, for some users they are not viable – those who are deaf-blind,
       for example, or those with cognitive or reading impairments that make it
@@ -1292,9 +1292,9 @@ span.note, span.issue { padding: .1em .5em .15em; }
 			</section>
 		</section>
 		<section id="system-requirements">
-			<!--OddPage--><h2 aria-level="1" role="heading" id="h2_system-requirements"><span class="secno">4. </span> System Requirements </h2>
+			<!--OddPage--><h2 id="h2_system-requirements" role="heading" aria-level="1"><span class="secno">4. </span> System Requirements </h2>
 			<section id="access-to-interactive-controls-menus">
-				<h3 aria-level="2" role="heading" id="h3_access-to-interactive-controls-menus"><span class="secno">4.1 </span> Access to interactive controls / menus </h3>
+				<h3 id="h3_access-to-interactive-controls-menus" role="heading" aria-level="2"><span class="secno">4.1 </span> Access to interactive controls / menus </h3>
 				<p>Media elements offer a rich set of interaction possibilities to users.
       These interaction possibilities must be available to all users, including
       those that cannot use a pointer device for interaction. Further, these
@@ -1314,7 +1314,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
                     providing pointing device
 					or other input methods in addition to keyboard operation.
 					(UAAG 2.0 2.1.1) </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_21"><span>Note</span></div><p class="">This means that all interaction possibilities with media elements
+					<div class="note"><div id="h_note_21" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This means that all interaction possibilities with media elements
         need to be keyboard accessible; e.g., through being able to tab onto
         the play, pause, mute buttons, and to move the playback position from
         the keyboard. </p></div>
@@ -1329,7 +1329,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
           playback rate, content navigation on same level (next/prev) and between
           levels (up/down) etc. This is also a particularly important requirement
           on mobile devices or devices without a keyboard. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_22"><span>Note</span></div><p class="">This means that the @controls content attribute needs to provide
+					<div class="note"><div id="h_note_22" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This means that the @controls content attribute needs to provide
         an extended set of control functionality including functionality for
         accessibility users. </p></div>
 				</div>
@@ -1337,7 +1337,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 					<div class="requirement" id="IC-3"><strong class="req-handle">[IC-3]</strong> All functionality available to native controls
           must also be available to scripted controls. The author would be able
           to choose any/all of the controls, style them and position them. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_23"><span>Note</span></div><p class="">This means that new IDL attributes need to be added to the media
+					<div class="note"><div id="h_note_23" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This means that new IDL attributes need to be added to the media
       elements for the extra controls that are accessibility related. </p></div>
 				</div>
 				<div class="indent">
@@ -1346,7 +1346,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
           functionality is available and essentially override author settings
           through user control. This is also a particularly important requirement
           on mobile devices or devices without a keyboard. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_24"><span>Note</span></div><p class="">This could be enabled through a context menu, which is keyboard
+					<div class="note"><div id="h_note_24" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This could be enabled through a context menu, which is keyboard
       accessible and its keyboard access cannot be turned off. </p></div>
 				</div>
 				<div class="indent">
@@ -1355,7 +1355,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
           so that a user presented with the scripted version is not
           excluded from participating in or experiencing 
           some expected behavior. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_25"><span>Note</span></div><p class="">This is below the level of HTML and means that the accessibility
+					<div class="note"><div id="h_note_25" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This is below the level of HTML and means that the accessibility
       platform needs to be extended to allow access to these controls. </p></div>
 				</div>
 				<div class="indent">
@@ -1367,14 +1367,14 @@ span.note, span.issue { padding: .1em .5em .15em; }
           accessibility framework. The vision-impaired user must be able to stop
           autoplay either generally on all media elements through a setting,
           or for particular pages through a single keyboard user interaction. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_26"><span>Note</span></div><p class="">This could be enabled through encouraging publishers to use @autoplay,
+					<div class="note"><div id="h_note_26" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This could be enabled through encouraging publishers to use @autoplay,
         encouraging UAs to implement accessibility settings that allow turning
         off all autoplay, and encouraging <abbr title="Assistive Technology">AT</abbr> to implement a shortcut key to stop
         all autoplay on a web page. </p></div>
 				</div>
 			</section>
 			<section id="granularity-level-control-for-structural-navigation">
-				<h3 aria-level="2" role="heading" id="h3_granularity-level-control-for-structural-navigation"><span class="secno">4.2 </span> Granularity level control for structural navigation </h3>
+				<h3 id="h3_granularity-level-control-for-structural-navigation" role="heading" aria-level="2"><span class="secno">4.2 </span> Granularity level control for structural navigation </h3>
 				<p>As explained in "Content Navigation" above, a real-time control
       mechanism must be provided for adjusting the granularity of the specific
       structural navigation point next and previous. Users must be able to set
@@ -1400,11 +1400,11 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 			<section id="time-scale-modification">
-				<h3 aria-level="2" role="heading" id="h3_time-scale-modification"><span class="secno">4.3 </span> Time-scale modification </h3>
+				<h3 id="h3_time-scale-modification" role="heading" aria-level="2"><span class="secno">4.3 </span> Time-scale modification </h3>
 				<p>While all devices may not support the capability, a standard control API
       must support the ability to speed up or slow down content presentation
       without altering audio pitch. </p>
-				<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_27"><span>Note</span></div><p class="">While perhaps unfamiliar to some, this feature has been present
+				<div class="note"><div id="h_note_27" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">While perhaps unfamiliar to some, this feature has been present
       on many devices, especially audiobook players, for some 20 years now. </p></div>
 				<p>The user can adjust the playback rate of prerecorded time-based media
         content, such that all of the following are true (UAAG 2.0 2.11.4): </p>
@@ -1431,7 +1431,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 			<section id="production-practice-and-resulting-requirements">
-				<h3 aria-level="2" role="heading" id="h3_production-practice-and-resulting-requirements"><span class="secno">4.4 </span> Production practice and resulting requirements </h3>
+				<h3 id="h3_production-practice-and-resulting-requirements" role="heading" aria-level="2"><span class="secno">4.4 </span> Production practice and resulting requirements </h3>
 				<p>One of the biggest challenges to date has been the lack of a universal system
       for media access. In response to user requirements various countries and
       groups have defined systems to provide accessibility, especially captioning
@@ -1496,7 +1496,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 			<section id="discovery-and-activation-deactivation-of-available-alternative-content-by-the-user">
-				<h3 aria-level="2" role="heading" id="h3_discovery-and-activation-deactivation-of-available-alternative-content-by-the-user"><span class="secno">4.5 </span> Discovery and activation/deactivation of available alternative content
+				<h3 id="h3_discovery-and-activation-deactivation-of-available-alternative-content-by-the-user" role="heading" aria-level="2"><span class="secno">4.5 </span> Discovery and activation/deactivation of available alternative content
       by the user </h3>
 				<p>As described above, individuals need a variety of media (alternative content)
       in order to perceive and understand the content. The author or some web
@@ -1556,7 +1556,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				<div class="indent">
 					<div class="requirement" id="DAC-9"><strong class="req-handle">[DAC-9]</strong> Provide the user with the option to record alternative content
                     along with the primary content on devices where recording is available. </div>
-                    <div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_28"><span>Note</span></div><div class="">
+                    <div class="note"><div id="h_note_28" role="heading" aria-level="3" class="note-title"><span>Note</span></div><div class="">
 					<p>This feature can be user configurable to allow maximum flexibility in trading off the
                     anticipated future need for the description against the amount of extra data storage required. A flexible
                     solution giving maximum control to the user would be to provide a global setting with the following
@@ -1572,7 +1572,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 			<section id="requirements-on-making-properties-available-to-the-accessibility-interface">
-				<h3 aria-level="2" role="heading" id="h3_requirements-on-making-properties-available-to-the-accessibility-interface"><span class="secno">4.6 </span> Requirements on making properties available to the accessibility interface </h3>
+				<h3 id="h3_requirements-on-making-properties-available-to-the-accessibility-interface" role="heading" aria-level="2"><span class="secno">4.6 </span> Requirements on making properties available to the accessibility interface </h3>
 				<p>Often forgotten in media systems, especially with the newer forms of packaging
       such as DVD menus and on-screen program guides, is the fact that the user
       needs to actually get to the content, control its playback, and turn on
@@ -1601,7 +1601,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 			<section id="requirements-on-the-use-of-the-viewport">
-				<h3 aria-level="2" role="heading" id="h3_requirements-on-the-use-of-the-viewport"><span class="secno">4.7 </span> Requirements on the use of the viewport </h3>
+				<h3 id="h3_requirements-on-the-use-of-the-viewport" role="heading" aria-level="2"><span class="secno">4.7 </span> Requirements on the use of the viewport </h3>
 				<p>The video viewport plays a particularly important role with respect to
       alternative-content technologies. Mostly it provides a bounding box for
       many of the visually represented alternative-content technologies (e.g.,
@@ -1634,7 +1634,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 					<p>If alternative content has a different height or width than the media
         content, then the user agent will reflow the (HTML) viewport. (UAAG 2.0
         1.8.7). </p>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_29"><span>Note</span></div><p class="">This may create a need to provide an author hint to the web page
+					<div class="note"><div id="h_note_29" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This may create a need to provide an author hint to the web page
         when embedding alternative content in order to instruct the web page how
         to render the content: to scale with the media resource, scale independently,
         or provide a position hint in relation to the media. On small devices
@@ -1655,7 +1655,7 @@ span.note, span.issue { padding: .1em .5em .15em; }
 						<li>line spacing (or line height), and</li>
 						<li>word spacing.</li>
 					</ol>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_30"><span>Note</span></div><p class="">This should be achievable through UA configuration or even through
+					<div class="note"><div id="h_note_30" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This should be achievable through UA configuration or even through
         something like a <a href="http://www.greasespot.net/">greasemonkey script</a> or <a href="http://www-archive.mozilla.org/unix/customizing.html#usercss">user
         CSS</a> which can override styles dynamically in the browser. </p></div>
 				</div>
@@ -1666,16 +1666,16 @@ span.note, span.issue { padding: .1em .5em .15em; }
           and to adjust the size of the playback viewport to avoid cropping,
           within the scaling limitations imposed by the media itself. (UAAG 2.0
           1.8.9) </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_31"><span>Note</span></div><p class="">This can be achieved by simply zooming into the web page, which
+					<div class="note"><div id="h_note_31" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This can be achieved by simply zooming into the web page, which
       will automatically rescale the layout and reflow the content. </p></div>
 				</div>
 				<div class="indent">
 					<div class="requirement" id="VP-4"><strong class="req-handle">[VP-4]</strong> Provide the user with the ability to control
           the contrast and brightness of the content within the playback viewport.
           (UAAG 2.0 2.11.8) </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_32"><span>Note</span></div><p class="">This is a user-agent device requirement and should already be
+					<div class="note"><div id="h_note_32" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">This is a user-agent device requirement and should already be
         addressed in the UAAG. In live content, it may even be possible to adjust
-        camera settings to achieve this requirement. It is also a   "<em class="rfc2119" title="SHOULD">SHOULD</em>" level
+        camera settings to achieve this requirement. It is also a   "<em title="SHOULD" class="rfc2119">SHOULD</em>" level
         requirement, since it does not account for limitations of various devices. </p></div>
 				</div>
 				<div class="indent">
@@ -1684,13 +1684,13 @@ span.note, span.issue { padding: .1em .5em .15em; }
           rendered. The user agent must avoid overlapping of overlay content
           and controls on media resources. This must also happen if, for example,
           the controls are only visible on demand. </div>
-					<div class="note"><div class="note-title" aria-level="3" role="heading" id="h_note_33"><span>Note</span></div><p class="">If there are several types of overlapping overlays, the controls
+					<div class="note"><div id="h_note_33" role="heading" aria-level="3" class="note-title"><span>Note</span></div><p class="">If there are several types of overlapping overlays, the controls
         should stay on the bottom edge of the viewport and the others should
         be moved above this area, all stacked above each other. </p></div>
 				</div>
 			</section>
 			<section id="requirements-on-secondary-screens-and-other-devices">
-				<h3 aria-level="2" role="heading" id="h3_requirements-on-secondary-screens-and-other-devices"><span class="secno">4.8 </span>Requirements on secondary screens and other devices</h3>
+				<h3 id="h3_requirements-on-secondary-screens-and-other-devices" role="heading" aria-level="2"><span class="secno">4.8 </span>Requirements on secondary screens and other devices</h3>
 				<p>Multiple secondary user devices must be directly addressable. This
                    functionality is increasingly also known  by the new term, "Second Screen,"
                    even though there may be more than two screens in any given viewing
@@ -1750,53 +1750,87 @@ span.note, span.issue { padding: .1em .5em .15em; }
 				</div>
 			</section>
 		</section>
-		<section class="appendix" id="acknowledgments">
-			<!--OddPage--><h2 aria-level="1" role="heading" id="h2_acknowledgments"><span class="secno">A. </span>Acknowledgments</h2>
+		<section id="acknowledgments" class="appendix">
+			<!--OddPage--><h2 id="h2_acknowledgments" role="heading" aria-level="1"><span class="secno">A. </span>Acknowledgments</h2>
 			<p>The following people contributed to the development of this document.</p>
-			<section id="ack_group" typeof="bibo:Chapter" resource="#ack_group" rel="bibo:Chapter">
-				<h3 aria-level="2" role="heading" id="h3_ack_group"><span class="secno">A.1 </span>Participants in the PFWG at the time of publication</h3>
-				<ol>
-					<li>David Bolter (Mozilla) </li>
-					<li>Sally Cain (Royal National Institute of Blind People)</li>
+			<section rel="bibo:Chapter" resource="#ack_group" typeof="bibo:Chapter" id="ack_group">
+				<h3 id="h3_ack_group" role="heading" aria-level="2"><span class="secno">A.1 </span>Participants in the PFWG and HTML Accessibility Task Force at the time of publication</h3>
+				<ul>
+					<li>Jim Allan (Invited Expert, Texas School for the Blind)</li>
+					<li>Christy Blew (Invited Expert, University of Illinois)</li>
+					<li>David Bolter (Mozilla Foundation) </li>
+					<li>Judy Brewer (<abbr title="World Wide Web Consortium">W3C</abbr>)</li>
+					<li>Sally Cain (RNIB)</li>
+					<li>Eric Carlson (Apple, Inc.)</li>
+					<li>Wendy Chisholm (Microsoft Corporation)</li>
 					<li>Michael Cooper (<abbr title="World Wide Web Consortium">W3C</abbr>/<abbr title="Massachusetts Institute of Technology">MIT</abbr>)</li>
+					<li>Paul Cotton (Microsoft Corporation)</li>
 					<li>James Craig (Apple Inc.) </li>
-					<li>Steve Faulkner (Invited Expert, The Paciello Group) </li>
-					<li>Geoff Freed (Invited Expert, NCAM)</li>
-					<li>Jon Gunderson (Invited Expert, UIUC)</li>
-					<li>Markus Gylling (DAISY Consortium)</li>
+					<li>Joanmarie Diggs (Igalia)</li>
+					<li>Jean-Pierre Evain (European Broadcasting Union)</li>
+					<li>Steve Faulkner (The Paciello Group) </li>
+					<li>John Foliot (Invited Expert)</li>
+					<li>Kelly Ford (Microsoft Corporation)</li>
+					<li>Christopher Gallelo (Microsoft Corporation)</li>
+					<li>Bryan Garaventa (SSB BART Group)</li>
+					<li>Scott Gonzàlez (JQuery Foundation)</li>
+					<li>Billy Gregory (The Paciello Group)</li>
+					<li>Karl Groves (The Paciello Group)</li>
+					<li>Jon Gunderson (Invited Expert, University of Illinois)</li>
+					<li>Birkir Gunnarsson (Deque Systems, Inc.)</li>
 					<li>Sean Hayes (Microsoft Corporation)</li>
-					<li>Kenny Johar (Vision Australia) </li>
+					<li>Ian Hickson (Google, Inc.)</li>
+					<li>Markus Gylling (DAISY Consortium)</li>
+					<li>Mona Heath (Invited Expert, University of Illinois)</li>
+					<li>Kenny Johar (Microsoft Corporation)</li>
+					<li>Susann Keohane (IBM Corporation)</li>
 					<li>Matthew King (IBM Corporation)</li>
-					<li>Gez Lemon (International Webmasters Association / HTML Writers Guild (IWA-HWG))</li>
-					<li>Thomas Logan (HiSoftware Inc.)</li>
-					<li>William Loughborough (Invited Expert)</li>
+					<li>Jason Kiss (Department of Internal Affairs, New Zealand Government)</li>
+					<li>Masatomo Kobayashi (IBM Corporation)</li>
+					<li>Philippe Le Hégaret (<abbr title="World Wide Web Consortium">W3C</abbr>)</li>
+					<li>Bob Lund (Cable Television Laboratories Inc)</li>
+					<li>David MacDonald (Invited Expert)</li>
+					<li>Jatinder Mann (Microsoft Corporation)</li>
+					<li>Dominic Mazzoni (Google, Inc.)</li>
 					<li>Shane McCarron (Invited Expert, Aptest)</li>
-					<li>Charles McCathieNevile (Opera Software)</li>
+					<li>Charles McCathieNevile (Yandex)</li>
 					<li>Mary Jo Mueller (IBM Corporation)</li>
+					<li>Jay Munro (Microsoft Corporation)</li>
 					<li>James Nurthen (Oracle Corporation) </li>
-					<li>Joshue O'Connor (Invited Expert) </li>
-					<li>Artur Ortega (Yahoo!, Inc.)</li>
-					<li>Sarah Pulis (Media Access Australia)</li>
-					<li>Gregory Rosmaita (Invited Expert)</li>
+					<li>Edward O'Connor (Apple, Inc.)</li>
+					<li>Joseph Karr O'Connor (Invited Expert)</li>
+					<li>Frank Oliver (Microsoft Corporation)</li>
+					<li>Silvia Pfeiffer (National ICT Australia (NICTA) Ltd)</li>
+					<li>Ian Pouncey (British Broadcasting Corporation)</li>
+					<li>Adrian Roselli (Invited Expert)</li>
+					<li>Sam Ruby (IBM Corporation)</li>
+					<li>Mark Sadecki (<abbr title="World Wide Web Consortium">W3C</abbr>)</li>
 					<li>Janina Sajka (Invited Expert, The Linux Foundation)</li>
 					<li>Joseph Scheuhammer (Invited Expert, Inclusive Design Research Centre, OCAD University) </li>
 					<li>Stefan Schnabel (SAP AG) </li>
 					<li>Richard Schwerdtfeger (IBM Corporation)</li>
-					<li>Lisa Seeman (Invited Expert, Aqueous) </li>
+					<li>Lisa Seeman (Invited Expert) </li>
 					<li>Cynthia Shelly (Microsoft Corporation) </li>
-					<li>Andi Snow-Weaver (IBM Corporation)</li>
-					<li>Gregg Vanderheiden (Invited Expert, Trace)</li>
-					<li>Léonie Watson (Invited Expert, Nomensa)</li>
+					<li>David Singer (Apple, Inc.)</li>
+					<li>Michael Smith (<abbr title="World Wide Web Consortium">W3C</abbr>)</li>
+					<li>Jeanne Spellman (<abbr title="World Wide Web Consortium">W3C</abbr>)</li>
+					<li>Maciej Stachowiak (Apple, Inc.)</li>
+					<li>Alexander Surkov (Mozilla Foundation)</li>
+					<li>Suzanne Taylor (Pearson plc)</li>
+					<li>Matthew Turvey (Invited Expert)</li>
+					<li>Léonie Watson (The Paciello Group)</li>
+					<li>Mark Watson (Netflix Inc.)</li>
+					<li>Wu Wei (<abbr title="World Wide Web Consortium">W3C</abbr> / RITT)</li>
+					<li>Marco Zehe (Mozilla Foundation)</li>
 					<li>Gottfried Zimmermann (Invited Expert, Access Technologies Group)</li>
-				</ol>
+				</ul>
 			</section>
-			<section id="ack_others" typeof="bibo:Chapter" resource="#ack_others" rel="bibo:Chapter">
-				<h3 aria-level="2" role="heading" id="h3_ack_others"><span class="secno">A.2 </span>Other previously active PFWG participants and contributors</h3>
-				<p> Jim Allan (TSB), Simon Bates, Chris Blouch (AOL), Judy Brewer (<abbr title="World Wide Web Consortium">W3C</abbr>/<abbr title="Massachusetts Institute of Technology">MIT</abbr>), Ben Caldwell (Trace), Charles Chen (Google, Inc.), Christian Cohrs, Dimitar Denev (Frauenhofer Gesellschaft), Donald Evans (AOL), Kentarou Fukuda (IBM Corporation), Becky Gibson (IBM), Alfred S. Gilman, Andres Gonzalez (Adobe Systems Inc.), Georgios Grigoriadis (SAP AG), Jeff Grimes (Oracle), Barbara Hartel, John Hrvatin (Microsoft Corporation), Masahiko Kaneko (Microsoft Corporation), Earl Johnson (Sun), Jael Kurz, Diego La Monica (International Webmasters Association / HTML Writers Guild (IWA-HWG)), Aaron Leventhal (IBM Corporation), Alex Li (SAP), Linda Mao (Microsoft), Anders Markussen (Opera Software), Matthew May (Adobe Systems Inc.), Lisa Pappas (Society for Technical Communication (STC)), Dave Pawson (RNIB), David Poehlman, Simon Pieters (Opera Software), T.V. Raman (Google, Inc.), Tony Ross (Microsoft Corporation), Martin Schaus (SAP AG), Marc Silbey (Microsoft Corporation), Henri Sivonen
-			(Mozilla), Jeanne Spellman (<abbr title="World Wide Web Consortium">W3C</abbr>), Henny Swan (Opera Software), Vitaly Sourikov, Mike Squillace (IBM), Ryan Williams (Oracle), Tom Wlodkowski.</p>
+			<section rel="bibo:Chapter" resource="#ack_others" typeof="bibo:Chapter" id="ack_others">
+				<h3 id="h3_ack_others" role="heading" aria-level="2"><span class="secno">A.2 </span>Other previously active PFWG participants and contributors</h3>
+				<p>Kazuyuki Ashimura (<abbr title="World Wide Web Consortium">W3C</abbr>), Simon Bates, Chris Blouch (AOL), Ben Caldwell (Trace), Charles Chen (Google, Inc.), Christian Cohrs, Dimitar Denev (Frauenhofer Gesellschaft), Donald Evans (AOL), Geoff Freed (Invited Expert, NCAM), Kentarou Fukuda (IBM Corporation), Becky Gibson (IBM), Alfred S. Gilman, Andres Gonzalez (Adobe Systems Inc.), Georgios Grigoriadis (SAP AG), Jeff Grimes (Oracle), Barbara Hartel, John Hrvatin (Microsoft Corporation), Masahiko Kaneko (Microsoft Corporation), Earl Johnson (Sun), Jael Kurz, Diego La Monica (International Webmasters Association / HTML Writers Guild (IWA-HWG)), Gez Lemon (International Webmasters Association / HTML Writers Guild (IWA-HWG)), Aaron Leventhal (IBM Corporation), Alex Li (SAP), Thomas Logan (HiSoftware Inc.), William Loughborough (Invited Expert), Linda Mao (Microsoft), Anders Markussen (Opera Software), Matthew May (Adobe Systems Inc.), Joshue O Connor (Invited Expert), Artur Ortega (Yahoo!, Inc.), Lisa Pappas (Society for Technical Communication (STC)), Dave Pawson (RNIB), David Poehlman, Simon Pieters (Opera Software), Sarah Pulis (Media Access Australia), T.V. Raman (Google, Inc.), Jan Richards (IDRC), Gregory Rosmaita (Invited Expert), Tony Ross (Microsoft Corporation), Martin Schaus (SAP AG), Marc Silbey (Microsoft Corporation), Henri Sivonen (Mozilla), Andi Snow-Weaver (IBM Corporation), Henny Swan (Opera Software), Vitaly Sourikov, Mike Squillace (IBM), Gregg Vanderheiden (Invited Expert, Trace), Ryan Williams (Oracle), Tom Wlodkowski.</p>
 			</section>
-			<section id="ack_funders" typeof="bibo:Chapter" resource="#ack_funders" rel="bibo:Chapter">
-				<h3 aria-level="2" role="heading" id="h3_ack_funders"><span class="secno">A.3 </span>Enabling funders</h3>
+			<section rel="bibo:Chapter" resource="#ack_funders" typeof="bibo:Chapter" id="ack_funders">
+				<h3 id="h3_ack_funders" role="heading" aria-level="2"><span class="secno">A.3 </span>Enabling funders</h3>
 				<p>This publication has been funded in part with Federal funds from the U.S. Department of Education, National Institute on Disability and Rehabilitation Research (NIDRR) under contract number ED-OSE-10-C-0067. The content of this publication does not necessarily reflect the views or policies of the U.S. Department of Education, nor does mention of trade names, commercial products, or organizations imply endorsement by the U.S. Government.</p>
 			</section>
 		</section>
