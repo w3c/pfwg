@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-US" typeof="bibo:Document " prefix="bibo: http://purl.org/ontology/bibo/ w3p: http://www.w3.org/2001/02pd/rec54#">
+<head><meta property="dc:language" content="en" lang="">
+		<title>Web Technology Accessibility Guidelines</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        
+		
+	<style>/*****************************************************************
+ * ReSpec 3 CSS
+ * Robin Berjon - http://berjon.com/
+ *****************************************************************/
+
+/* --- INLINES --- */
+em.rfc2119 { 
+    text-transform:     lowercase;
+    font-variant:       small-caps;
+    font-style:         normal;
+    color:              #900;
+}
+
+h1 acronym, h2 acronym, h3 acronym, h4 acronym, h5 acronym, h6 acronym, a acronym,
+h1 abbr, h2 abbr, h3 abbr, h4 abbr, h5 abbr, h6 abbr, a abbr {
+    border: none;
+}
+
+dfn {
+    font-weight:    bold;
+}
+
+a.internalDFN {
+    color:  inherit;
+    border-bottom:  1px solid #99c;
+    text-decoration:    none;
+}
+
+a.externalDFN {
+    color:  inherit;
+    border-bottom:  1px dotted #ccc;
+    text-decoration:    none;
+}
+
+a.bibref {
+    text-decoration:    none;
+}
+
+cite .bibref {
+    font-style: normal;
+}
+
+code {
+    color:  #C83500;
+}
+
+/* --- TOC --- */
+.toc a, .tof a {
+    text-decoration:    none;
+}
+
+a .secno, a .figno {
+    color:  #000;
+}
+
+ul.tof, ol.tof {
+    list-style: none outside none;
+}
+
+.caption {
+    margin-top: 0.5em;
+    font-style:   italic;
+}
+
+/* --- TABLE --- */
+table.simple {
+    border-spacing: 0;
+    border-collapse:    collapse;
+    border-bottom:  3px solid #005a9c;
+}
+
+.simple th {
+    background: #005a9c;
+    color:  #fff;
+    padding:    3px 5px;
+    text-align: left;
+}
+
+.simple th[scope="row"] {
+    background: inherit;
+    color:  inherit;
+    border-top: 1px solid #ddd;
+}
+
+.simple td {
+    padding:    3px 10px;
+    border-top: 1px solid #ddd;
+}
+
+.simple tr:nth-child(even) {
+    background: #f0f6ff;
+}
+
+/* --- DL --- */
+.section dd > p:first-child {
+    margin-top: 0;
+}
+
+.section dd > p:last-child {
+    margin-bottom: 0;
+}
+
+.section dd {
+    margin-bottom:  1em;
+}
+
+.section dl.attrs dd, .section dl.eldef dd {
+    margin-bottom:  0;
+}
+
+@media print {
+    .removeOnSave {
+        display: none;
+    }
+}
+</style><link href="https://www.w3.org/StyleSheets/TR/W3C-ED" rel="stylesheet"><!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]--></head>
+	<body id="respecDocument" role="document" class="h-entry"><div id="respecHeader" role="contentinfo" class="head">
+  <p>
+      
+        
+            <a href="http://www.w3.org/"><img src="https://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width="72"></a>
+        
+      
+  </p>
+  <h1 class="title p-name" id="title" property="dcterms:title">Web Technology Accessibility Guidelines</h1>
+  
+  <h2 id="w3c-editor-s-draft-24-february-2015"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2015-02-24">24 February 2015</time></h2>
+  <dl>
+    
+      <dt>This version:</dt>
+      <dd><a class="u-url" href="http://w3c.github.io/pfwg/wtag/wtag.html">http://w3c.github.io/pfwg/wtag/wtag.html</a></dd>
+      <dt>Latest published version:</dt>
+      <dd><a href="http://www.w3.org/TR/wtag/">http://www.w3.org/TR/wtag/</a></dd>
+    
+    
+      <dt>Latest editor's draft:</dt>
+      <dd><a href="http://w3c.github.io/pfwg/wtag/wtag.html">http://w3c.github.io/pfwg/wtag/wtag.html</a></dd>
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    <dt>Editor:</dt>
+    <dd class="p-author h-card vcard" property="bibo:editor" resource="_:editor0"><span property="rdf:first" typeof="foaf:Person"><span property="foaf:name" class="p-name fn">Michael Cooper</span>, <a property="foaf:workplaceHomepage" class="p-org org h-org h-card" href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a></span>
+<span property="rdf:rest" resource="rdf:nil"></span>
+</dd>
+
+    
+    
+  </dl>
+  
+  
+  
+  
+    
+      <p class="copyright">
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+        2015
+        
+        <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), 
+        
+        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
+        
+          <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a>
+        
+        rules apply.
+      </p>
+    
+  
+  <hr>
+</div>
+		<section property="dc:abstract" class="introductory" id="abstract"><!--OddPage--><h2 resource="#h-abstract" id="h-abstract"><span property="xhv:role" resource="xhv:heading">Abstract</span></h2>Web Technology Accessibility Guidelines advises creators of technical specifications how to ensure their technology meets the needs of user with disabilities. It addresses primarily web content technologies but also relates to any technology that affects web content sent to users, including client-side APIs, transmission protocols, and interchange formats. Specifications that implement these guidelines make it possible for content authors and user agents to render the content in an accessible manner to people with a wide range of abilities.<p> </p></section><section id="sotd" class="introductory"><!--OddPage--><h2 resource="#h-sotd" id="h-sotd"><span property="xhv:role" resource="xhv:heading">Status of This Document</span></h2>
+  
+    
+      
+        <p>
+          <em>This section describes the status of this document at the time of its publication.
+          Other documents may supersede this document. A list of current <abbr title="World Wide Web Consortium">W3C</abbr> publications and the
+          latest revision of this technical report can be found in the <a href="http://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at
+          http://www.w3.org/TR/.</em>
+        </p>
+        
+        
+		
+        
+        <p>
+          This document was published by the <a href="http://www.w3.org/WAI/PF/">Protocols and Formats Working Group</a> as an Editor's Draft.
+          
+          
+            If you wish to make comments regarding this document, please send them to 
+            <a href="mailto:public-pfwg-comments@w3.org">public-pfwg-comments@w3.org</a> 
+            (<a href="mailto:public-pfwg-comments-request@w3.org?subject=subscribe">subscribe</a>,
+            <a href="http://lists.w3.org/Archives/Public/public-pfwg-comments/">archives</a>).
+          
+          
+          
+          
+          
+            
+            All comments are welcome.
+            
+          
+        </p>
+        
+        
+        
+          <p>
+            Publication as an Editor's Draft does not imply endorsement by the <abbr title="World Wide Web Consortium">W3C</abbr>
+            Membership. This is a draft document and may be updated, replaced or obsoleted by other
+            documents at any time. It is inappropriate to cite this document as other than work in
+            progress.
+          </p>
+        
+        
+        
+        <p>
+          
+            This document was produced by a group operating under the 
+            <a id="sotd_patent" property="w3p:patentRules" href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 <abbr title="World Wide Web Consortium">W3C</abbr> Patent
+            Policy</a>.
+          
+          
+          
+            
+              <abbr title="World Wide Web Consortium">W3C</abbr> maintains a <a href="http://www.w3.org/2004/01/pp-impl/32212/status" rel="disclosure">public list of any patent
+              disclosures</a> 
+            
+            made in connection with the deliverables of the group; that page also includes
+            instructions for disclosing a patent. An individual who has actual knowledge of a patent
+            which the individual believes contains
+            <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential
+            Claim(s)</a> must disclose the information in accordance with
+            <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section
+            6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
+          
+          
+        </p>
+        
+          <p>This document is governed by the <a id="w3c_process_revision" href="http://www.w3.org/2014/Process-20140801/">1 August 2014 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
+          </p>
+        
+        
+      
+    
+  
+</section><section id="toc"><h2 resource="#h-toc" id="h-toc" class="introductory"><span property="xhv:role" resource="xhv:heading">Table of Contents</span></h2><ul id="respecContents" role="directory" class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><span class="secno">1. </span>Introduction</a><ul class="toc"><li class="tocline"><a class="tocxref" href="#goals"><span class="secno">1.1 </span>Goals</a></li><li class="tocline"><a class="tocxref" href="#approach"><span class="secno">1.2 </span>Approach</a></li><li class="tocline"><a class="tocxref" href="#explanation-of-user-needs"><span class="secno">1.3 </span>Explanation of User Needs</a></li></ul></li><li class="tocline"><a class="tocxref" href="#collected-user-needs"><span class="secno">2. </span>Collected User Needs</a></li><li class="tocline"><a class="tocxref" href="#meeting-user-needs"><span class="secno">3. </span>Meeting User Needs</a></li><li class="tocline"><a class="tocxref" href="#web-technology-accessibility-guidelines"><span class="secno">4. </span>Web Technology Accessibility Guidelines</a></li><li class="tocline"><a class="tocxref" href="#acknowledgments"><span class="secno">A. </span>Acknowledgments</a><ul class="toc"><li class="tocline"><a class="tocxref" href="#ack_group"><span class="secno">A.1 </span>Participants in the PFWG at the time of publication</a></li><li class="tocline"><a class="tocxref" href="#ack_funders"><span class="secno">A.2 </span>Enabling funders</a></li></ul></li></ul></section>
+		
+		<section property="bibo:hasPart" resource="#introduction" typeof="bibo:Chapter" id="introduction">
+			<!--OddPage--><h2 resource="#h-introduction" id="h-introduction"><span property="xhv:role" resource="xhv:heading"><span class="secno">1. </span>Introduction</span></h2>
+			<section property="bibo:hasPart" resource="#goals" typeof="bibo:Chapter" id="goals">
+				<h3 resource="#h-goals" id="h-goals"><span property="xhv:role" resource="xhv:heading"><span class="secno">1.1 </span>Goals</span></h3>
+			</section>
+			<section property="bibo:hasPart" resource="#approach" typeof="bibo:Chapter" id="approach">
+				<h3 resource="#h-approach" id="h-approach"><span property="xhv:role" resource="xhv:heading"><span class="secno">1.2 </span>Approach</span></h3>
+			</section>
+			<section property="bibo:hasPart" resource="#explanation-of-user-needs" typeof="bibo:Chapter" id="explanation-of-user-needs">
+				<h3 resource="#h-explanation-of-user-needs" id="h-explanation-of-user-needs"><span property="xhv:role" resource="xhv:heading"><span class="secno">1.3 </span>Explanation of User Needs</span></h3>
+				<figure id="fig-accessibility-needs-become-mainstream-needs-over-time">
+					<img src="img/usability-accessibility.png" xmlns="http://www.w3.org/1999/xhtml">
+					<figcaption>Fig. <span class="figno">1</span> <span class="fig-title">Accessibility needs become mainstream needs over time</span></figcaption>
+				</figure>
+				<p></p>
+			</section>
+		</section>
+		<section property="bibo:hasPart" resource="#collected-user-needs" typeof="bibo:Chapter" id="collected-user-needs">
+			<!--OddPage--><h2 resource="#h-collected-user-needs" id="h-collected-user-needs"><span property="xhv:role" resource="xhv:heading"><span class="secno">2. </span>Collected User Needs</span></h2>
+		</section>
+		<section property="bibo:hasPart" resource="#meeting-user-needs" typeof="bibo:Chapter" id="meeting-user-needs">
+			<!--OddPage--><h2 resource="#h-meeting-user-needs" id="h-meeting-user-needs"><span property="xhv:role" resource="xhv:heading"><span class="secno">3. </span>Meeting User Needs</span></h2>
+		</section>
+		<section property="bibo:hasPart" resource="#web-technology-accessibility-guidelines" typeof="bibo:Chapter" id="web-technology-accessibility-guidelines">
+			<!--OddPage--><h2 resource="#h-web-technology-accessibility-guidelines" id="h-web-technology-accessibility-guidelines"><span property="xhv:role" resource="xhv:heading"><span class="secno">4. </span>Web Technology Accessibility Guidelines</span></h2>
+		</section>
+            <section property="bibo:hasPart" resource="#acknowledgments" typeof="bibo:Chapter" id="acknowledgments" class="appendix">
+			<!--OddPage--><h2 resource="#h-acknowledgments" id="h-acknowledgments"><span property="xhv:role" resource="xhv:heading"><span class="secno">A. </span>Acknowledgments</span></h2>
+			<p>The following people contributed to the development of this document.</p>
+			<section property="bibo:hasPart" resource="#ack_group" typeof="bibo:Chapter" id="ack_group">
+				<h3 resource="#h-ack_group" id="h-ack_group"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.1 </span>Participants in the PFWG at the time of publication</span></h3>
+				<ol>
+					<li>David Bolter (Mozilla) </li>
+					<li>Sally Cain (Royal National Institute of Blind People)</li>
+					<li>Michael Cooper (<abbr title="World Wide Web Consortium">W3C</abbr>/<abbr title="Massachusetts Institute of Technology">MIT</abbr>)</li>
+					<li>James Craig (Apple Inc.) </li>
+					<li>Steve Faulkner (Invited Expert, The Paciello Group) </li>
+					<li>Geoff Freed (Invited Expert, NCAM)</li>
+					<li>Jon Gunderson (Invited Expert, UIUC)</li>
+					<li>Markus Gylling (DAISY Consortium)</li>
+					<li>Sean Hayes (Microsoft Corporation)</li>
+					<li>Kenny Johar (Vision Australia) </li>
+					<li>Matthew King (IBM Corporation)</li>
+					<li>Gez Lemon (International Webmasters Association / HTML Writers Guild (IWA-HWG))</li>
+					<li>Thomas Logan (HiSoftware Inc.)</li>
+					<li>William Loughborough (Invited Expert)</li>
+					<li>Shane McCarron (Invited Expert, Aptest)</li>
+					<li>Charles McCathieNevile (Opera Software)</li>
+					<li>Mary Jo Mueller (IBM Corporation)</li>
+					<li>James Nurthen (Oracle Corporation) </li>
+					<li>Joshue O'Connor (Invited Expert) </li>
+					<li>Artur Ortega (Yahoo!, Inc.)</li>
+					<li>Sarah Pulis (Media Access Australia)</li>
+					<li>Gregory Rosmaita (Invited Expert)</li>
+					<li>Janina Sajka (Invited Expert, The Linux Foundation)</li>
+					<li>Joseph Scheuhammer (Invited Expert, Inclusive Design Research Centre, OCAD University) </li>
+					<li>Stefan Schnabel (SAP AG) </li>
+					<li>Richard Schwerdtfeger (IBM Corporation)</li>
+					<li>Lisa Seeman (Invited Expert, Aqueous) </li>
+					<li>Cynthia Shelly (Microsoft Corporation) </li>
+					<li>Andi Snow-Weaver (IBM Corporation)</li>
+					<li>Gregg Vanderheiden (Invited Expert, Trace)</li>
+					<li>Léonie Watson (Invited Expert, Nomensa)</li>
+					<li>Gottfried Zimmermann (Invited Expert, Access Technologies Group)</li>
+				</ol>
+			</section>
+			<section property="bibo:hasPart" resource="#ack_funders" typeof="bibo:Chapter" id="ack_funders">
+				<h3 resource="#h-ack_funders" id="h-ack_funders"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.2 </span>Enabling funders</span></h3>
+				<p>This publication has been funded in part with Federal funds from the U.S. Department of Education, National Institute on Disability and Rehabilitation Research (NIDRR) under contract number ED-OSE-10-C-0067. The content of this publication does not necessarily reflect the views or policies of the U.S. Department of Education, nor does mention of trade names, commercial products, or organizations imply endorsement by the U.S. Government.</p>
+			</section>
+		</section>
+	
+
+</body></html>
