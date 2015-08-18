@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>[DRAFT] Web Technology Accessibility Guidelines Checklist</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link href="https://www.w3.org/StyleSheets/TR/W3C-ED" rel="stylesheet"/>
+		<style type="text/css">
+			@counter-style checklist
+				 {
+					system: cyclic;
+					symbols: ☐;
+					suffix: " ";
+				}
+			.checklist {
+				list-style-type: checklist;
+			}
+			.checklist ul {
+				list-style-type: disc;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>[DRAFT] Web Technology Accessibility Guidelines Checklist</h1>
+		<p>This is a draft checklist to support <a href="wtag.html">Web Technology Accessibility Guidelines (WTAG)</a> prepared by the <a href="http://www.w3.org/WAI/PF/">Protocols and Format Working Group</a> and expected to be continued by the <a href="http://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a>. The goal of WTAG is to describe the features that web technologies should provide to ensure it is possible to create content that is accessible to users with disabilities. The full Web Technology Accessibility Guidelines references an analysis of user requirements and provides comprehensive guidance to technology developers. This checklist extracts that information at a high level to aid in self-review of technologies. Specification developers can use this to help ensure the technology will address features likely to be raised during horizontal review from accessibility proponents.</p>
+		<p>Web technologies address a variety of needs, and very few technologies are intended to address all situations. This checklist is organized by types of features that a technology may provide. If the technology provides such a feature, the checklist items under the heading are applicable and should be examined. If the technology does not provide such a feature, the checklist items under the heading are not applicable and can be passed over.</p>
+		<section>
+			<h2>If technology creates objects that don't have an inherent text representation</h2>
+			<ul class="checklist">
+				<li>There is a mechanism to create short text alternatives that label the object<ul>
+						<li>Explanation</li>
+					</ul></li>
+				<li>There is a mechanism to create extended text alternatives for fallback content </li>
+				<li>Text alternatives can be semantically "rich" e.g., with page structure, text style, hyperlinks, etc. </li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology allows visual rendering of content</h2>
+			<ul class="checklist">
+				<li>Item
+					<ul>
+						<li>Explanation</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology provides author control over color</h2>
+			<ul class="checklist">
+				<li>There is a mechanism for users to override colors of text and user interface components. </li>
+				<li>There is a feature for authors to define semantically available "color classes" that users can easily map to custom colors, and give preference to this vs. coloring objects individually. </li>
+				<li>There is a feature for users to choose color schemata that work for them. </li>
+				<li>The foreground and background color of an object can be reported to the user via AT. </li>
+				<li>There are ways to set foreground and background colors separately for all objects. </li>
+				<li>Compositing rules for foreground and background colors are well defined. </li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology provides time-based visual media</h2>
+			<ul class="checklist">
+				<li>Item
+					<ul>
+						<li>Explanation</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology provides audio</h2>
+			<ul class="checklist">
+				<li>Item
+					<ul>
+						<li>Explanation</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology provides features to accept user input</h2>
+			<ul class="checklist">
+				<li>There is a mechanism to label user input controls.</li>
+				<li>There is a mechanism to report and set the state or value of controls programmatically.</li>
+				<li>Authors can address multiple types of input hardware (keyboard, pointing device, touch screen, voice recognition, etc.), or the technology supports hardware-agnostic input methods.<ul>
+						<li>Explanation</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology provides internationalization support</h2>
+			<ul class="checklist">
+				<li>Accessibility features can be internationalized to the same degree as other features, including multiple language alternatives, language identification and changes, text directionality identification, etc.<ul>
+						<li>Explanation</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology defines document or GUI semantics</h2>
+			<ul class="checklist">
+				<li>For every user interface object type, the "type" of object can be exposed as a role to AAPIs. </li>
+				<li>For every user interface object type, there is a clearly defined mechanism for authors to provide and / or user agents determines the "accessible name" for AAPIs. </li>
+				<li>For user interface objects that can have states, properties, or values, authors can set these and these can be exposed to AAPIs. </li>
+				<li>When providing imperative mechanisms to implement technology features (e.g., scripts), authors can expose accessibility information to AAPIs. </li>
+				<li>Authors can title Web pages and sections of content. </li>
+				<li>Authors can clearly indicate the target of a hyperlink and function of a control. </li>
+				<li>Authors can indicate content language, for the page as a whole and for blocks of content. </li>
+				<li>Authors can support understanding of abbreviations / acronyms / initialisms, idioms, jargon, etc. </li>
+				<li>Authors can support correct machine pronunciation of ambiguously spelled terms (e.g., in the phrase "I am content with this content" there are different correct pronunciations of the lexeme "content"). </li>
+				<li>Declarative mechanisms (that have accessibility semantics pre-defined in the spec) are used to implement technology features whenever possible. </li>
+				<li>There are unambiguous ways to express relationships between units of content, such as object nesting, ID referencing, etc. </li>
+				<li>Prefer structural semantics to presentational semantics. </li>
+				<li>When providing presentational semantics, they can be easily mapped to structural semantics, e.g., to support restyling or meaningful exposure to AAPIs. </li>
+				<li>Support a comprehensive set of authoring use cases to minimize the need for alternative content. (e.g., don't make authors resort to text in images to get the style they want) </li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology provides user interaction features</h2>
+			<ul class="checklist">
+				<li>Item <ul>
+						<li>Explanation</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology allows time limits</h2>
+			<ul class="checklist">
+				<li>Item <ul>
+						<li>Explanation</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology provides content fallback mechanisms</h2>
+			<ul>
+				<li>Authors can explicitly mark content as not needing alternative content because it does not perform an important role. </li>
+				<li>Authors can explicitly indicate when author declined to provide alternative content. </li>
+				<li>Authors can explicitly indicate that authoring tool is unable to generate or obtain alternative content. </li>
+				<li>Authors can explicitly associate alternative content with the primary content. </li>
+				<li>Authors can associate multiple types and instances of alternative content with primary content. </li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology allows text content</h2>
+			<ul>
+				<li>Authors can define non-text alternatives for text content. </li>
+				<li>Authors can define non-text alternatives for non-text content . </li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology provides visual graphics</h2>
+			<ul class="checklist">
+				<li>Item <ul>
+						<li>Explanation</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology </h2>
+			<ul class="checklist">
+				<li>Item <ul>
+						<li>Explanation</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology </h2>
+			<ul class="checklist">
+				<li>Item <ul>
+						<li>Explanation</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>If technology </h2>
+			<ul class="checklist">
+				<li>Item <ul>
+						<li>Explanation</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+	</body>
+</html>
