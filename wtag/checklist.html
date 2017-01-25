@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
 		<title>[DRAFT] Web Technology Accessibility Guidelines Checklist</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link href="https://www.w3.org/StyleSheets/TR/W3C-ED" rel="stylesheet" />
 		<style type="text/css">
 			@counter-style checklist
@@ -36,31 +37,21 @@
 				background-color: black;
 				color: white;
 			}
+			th[scope=rowgroup] a:link, th[scope=rowgroup] a:hover, th[scope=rowgroup] a:active {
+				color: teal;
+			}
+			th[scope=rowgroup] a:visited {
+				color: aqua;
+			}
 			td:first-child::before {
 				content: "☐ ";
 			}
 		</style>
 	</head>
-	
 	<body>
 		<h1>[DRAFT] Web Technology Accessibility Guidelines Checklist</h1>
-		<p>This is a draft checklist to support <a href="http://w3c.github.io/pfwg/wtag/wtag.html">Web Technology Accessibility Guidelines (WTAG)</a> prepared by the <a href="http://www.w3.org/WAI/PF/">Protocols and Format Working Group</a> and expected to be continued by the <a href="http://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a>.
- The goal of WTAG is to describe the features that web technologies 
-should provide to ensure it is possible to create content that is 
-accessible to users with disabilities. The full Web Technology 
-Accessibility Guidelines references an analysis of user requirements and
- provides comprehensive guidance to technology developers. This 
-checklist extracts that information at a high level to aid in 
-self-review of technologies. Specification developers can use this to 
-help ensure the technology will address features likely to be raised 
-during horizontal review from accessibility proponents.</p>
-		<p>Web technologies address a variety of needs, and very few 
-technologies are intended to address all situations. This checklist is 
-organized by types of features that a technology may provide. If the 
-technology provides such a feature, the checklist items under the 
-heading are applicable and should be examined. If the technology does 
-not provide such a feature, the checklist items under the heading are 
-not applicable and can be passed over.</p>
+		<p>This is a draft checklist to support <a href="wtag.html">Web Technology Accessibility Guidelines (WTAG)</a> prepared by the <a href="http://www.w3.org/WAI/PF/">Protocols and Format Working Group</a> and expected to be continued by the <a href="http://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a>. The goal of WTAG is to describe the features that web technologies should provide to ensure it is possible to create content that is accessible to users with disabilities. The full Web Technology Accessibility Guidelines references an analysis of user requirements and provides comprehensive guidance to technology developers. This checklist extracts that information at a high level to aid in self-review of technologies. Specification developers can use this to help ensure the technology will address features likely to be raised during horizontal review from accessibility proponents.</p>
+		<p>Web technologies address a variety of needs, and very few technologies are intended to address all situations. This checklist is organized by types of features that a technology may provide. If the technology provides such a feature, the checklist items under the heading are applicable and should be examined. If the technology does not provide such a feature, the checklist items under the heading are not applicable and can be passed over.</p>
 		<table>
 			<caption></caption>
 			<thead>
@@ -106,7 +97,7 @@ not applicable and can be passed over.</p>
 				</tr>
 				<tr>
 					<td>Text presentation attributes can be changed. </td>
-					<td> Typeface, font weight, font style, ine / word / letter spacing, margins, line length, justification</td>
+					<td> Typeface, font weight, font style, line / word / letter spacing, margins, line length, justification</td>
 					<td></td>
 				</tr>
 				<tr>
@@ -120,9 +111,7 @@ not applicable and can be passed over.</p>
 					<td></td>
 				</tr>
 				<tr>
-					<td>Technology does not allow blinking or flashing of content, or 
-provides a feature for users to quickly turn it off or permanently 
-disable it.</td>
+					<td>Technology does not allow blinking or flashing of content, or provides a feature for users to quickly turn it off or permanently disable it.</td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -142,9 +131,7 @@ disable it.</td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>There is a feature for authors to define semantically available
- "color classes" that users can easily map to custom colors, and give 
-preference to this vs. coloring objects individually. </td>
+					<td>There is a feature for authors to define semantically available "color classes" that users can easily map to custom colors, and give preference to this vs. coloring objects individually. </td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -174,9 +161,7 @@ preference to this vs. coloring objects individually. </td>
 					<th colspan="3" scope="rowgroup">If technology provides time-based visual media (see also the <a href="https://www.w3.org/WAI/PF/HTML/wiki/Media_Accessibility_Checklist">Media Accessibility Checklist</a>)</th>
 				</tr>
 				<tr>
-					<td>It is possible for authors to provide detailed text 
-descriptions, audio descriptions, or both of the important content in 
-the media. </td>
+					<td>It is possible for authors to provide detailed text descriptions, audio descriptions, or both of the important content in the media. </td>
 					<td>Explanation</td>
 					<td></td>
 				</tr>
@@ -261,10 +246,7 @@ the media. </td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>Authors can support correct machine pronunciation of 
-ambiguously spelled terms (e.g., in the phrase "I am content with this 
-content" there are different correct pronunciations of the lexeme 
-"content"). </td>
+					<td>Authors can support correct machine pronunciation of ambiguously spelled terms (e.g., in the phrase "I am content with this content" there are different correct pronunciations of the lexeme "content"). </td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -274,9 +256,7 @@ content" there are different correct pronunciations of the lexeme
 					<td></td>
 				</tr>
 				<tr>
-					<td>Declarative mechanisms (that have accessibility semantics 
-pre-defined in the spec) are used to implement technology features 
-whenever possible. </td>
+					<td>Declarative mechanisms (that have accessibility semantics pre-defined in the spec) are used to implement technology features whenever possible. </td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -291,16 +271,12 @@ whenever possible. </td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>When providing presentational semantics, they can be easily 
-mapped to structural semantics, e.g., to support restyling or meaningful
- exposure to AAPIs. </td>
+					<td>When providing presentational semantics, they can be easily mapped to structural semantics, e.g., to support restyling or meaningful exposure to AAPIs. </td>
 					<td></td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>Support a comprehensive set of authoring use cases to minimize 
-the need for alternative content. (e.g., don't make authors resort to 
-text in images to get the style they want).</td>
+					<td>Support a comprehensive set of authoring use cases to minimize the need for alternative content. (e.g., don't make authors resort to text in images to get the style they want).</td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -340,9 +316,7 @@ text in images to get the style they want).</td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>Authors can address multiple types of input hardware (keyboard,
- pointing device, touch screen, voice recognition, etc.), or the 
-technology supports hardware-agnostic input methods. </td>
+					<td>Authors can address multiple types of input hardware (keyboard, pointing device, touch screen, voice recognition, etc.), or the technology supports hardware-agnostic input methods. </td>
 					<td>Explanation</td>
 					<td></td>
 				</tr>
@@ -367,22 +341,17 @@ technology supports hardware-agnostic input methods. </td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>For every user interface object type, there is a clearly 
-defined mechanism for authors to provide and / or user agents determines
- the "accessible name" for AAPIs. </td>
+					<td>For every user interface object type, there is a clearly defined mechanism for authors to provide and / or user agents determines the "accessible name" for AAPIs. </td>
 					<td></td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>For user interface objects that can have states, properties, or
- values, authors can set these and these can be exposed to AAPIs. </td>
+					<td>For user interface objects that can have states, properties, or values, authors can set these and these can be exposed to AAPIs. </td>
 					<td></td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>When providing imperative mechanisms to implement technology 
-features (e.g., scripts), authors can expose accessibility information 
-to AAPIs. </td>
+					<td>When providing imperative mechanisms to implement technology features (e.g., scripts), authors can expose accessibility information to AAPIs. </td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -413,10 +382,7 @@ to AAPIs. </td>
 					<th colspan="3" scope="rowgroup">If technology creates objects that don't have an inherent text representation</th>
 				</tr>
 				<tr>
-					<td colspan="3">This includes primarily images, video, and audio 
-but can also include other forms of complex content. Objects should also
- be directly accesible, but text alternatives are needed as a universal 
-fallback.</td>
+					<td colspan="3">This includes primarily images, video, and audio but can also include other forms of complex content. Objects should also be directly accesible, but text alternatives are needed as a universal fallback.</td>
 				</tr>
 				<tr>
 					<td>There is a mechanism to create short text alternatives that label the object. </td>
@@ -484,10 +450,7 @@ fallback.</td>
 					<th colspan="3" scope="rowgroup">If technology provides internationalization support</th>
 				</tr>
 				<tr>
-					<td>Accessibility features can be internationalized to the same 
-degree as other features, including multiple language alternatives, 
-language identification and changes, text directionality identification,
- etc. </td>
+					<td>Accessibility features can be internationalized to the same degree as other features, including multiple language alternatives, language identification and changes, text directionality identification, etc. </td>
 					<td>Explanation</td>
 					<td></td>
 				</tr>
@@ -498,9 +461,7 @@ language identification and changes, text directionality identification,
 				</tr>
 				<tr>
 					<td>Accessible alternatives themselves meet the same bar of accessibility. </td>
-					<td>For instance, captions should be able to have color and style 
-changed by the user. Text alternatives should allow rich content. Audio 
-descriptions should be separable from other sound.</td>
+					<td>For instance, captions should be able to have color and style changed by the user. Text alternatives should allow rich content. Audio descriptions should be separable from other sound.</td>
 					<td></td>
 				</tr>
 			</tbody>
@@ -519,16 +480,12 @@ descriptions should be separable from other sound.</td>
 					<th colspan="3" scope="rowgroup">If technology defines an API</th>
 				</tr>
 				<tr>
-					<td>If the API can be used for structured content, it provides 
-features to represent all aspects of the content including hidden 
-accessibility features. </td>
+					<td>If the API can be used for structured content, it provides features to represent all aspects of the content including hidden accessibility features. </td>
 					<td>Explanation</td>
 					<td></td>
 				</tr>
 				<tr>
-					<td>If the API relies on user agents to generate a user interface, 
-the specification provides guidance about accessibility requirements 
-needed to enable full interaction with the API. </td>
+					<td>If the API relies on user agents to generate a user interface, the specification provides guidance about accessibility requirements needed to enable full interaction with the API. </td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -538,9 +495,7 @@ needed to enable full interaction with the API. </td>
 					<th colspan="3" scope="rowgroup">If technology defines a transmission protocol</th>
 				</tr>
 				<tr>
-					<td>Use of the protocol does not cause any aspect of the content, 
-including metadata which could contain important accessibility 
-information, to be removed. </td>
+					<td>Use of the protocol does not cause any aspect of the content, including metadata which could contain important accessibility information, to be removed. </td>
 					<td>Explanation</td>
 					<td></td>
 				</tr>
@@ -551,6 +506,5 @@ information, to be removed. </td>
 				</tr>
 			</tbody>
 		</table>
-	
-
-</body></html>
+	</body>
+</html>
